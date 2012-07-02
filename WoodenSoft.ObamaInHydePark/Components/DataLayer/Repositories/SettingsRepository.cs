@@ -27,10 +27,11 @@ namespace WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories
                                      new SqlParameter("@Phone", settings.ContactPhone),
                                      new SqlParameter("@Message", settings.HomePageMessage), 
                                      new SqlParameter("@Email", settings.ContactEmail),
-                                     new SqlParameter("@terms", settings.Terms), 
+                                     new SqlParameter("@terms", settings.Terms),
+                                     new SqlParameter("@itunes", settings.ITunesUrl) 
                                  };
-            const string sql = "INSERT INTO SETTINGS (ContactEmail,Terms,AboutUs, ContactAddress, LogoUrl, ContactPhone, HomePageMessage)" +
-                               " VALUES(@Email, @terms, @AboutUs, @Address, @LogoUrl, @Phone, @Message)";
+            const string sql = "INSERT INTO SETTINGS (ContactEmail,Terms,AboutUs, ContactAddress, LogoUrl, ContactPhone, HomePageMessage, ITunesUrl)" +
+                               " VALUES(@Email, @terms, @AboutUs, @Address, @LogoUrl, @Phone, @Message, @itunes)";
             ExecuteNonQuery(sql, parameters);
         }
     }

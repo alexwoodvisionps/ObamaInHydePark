@@ -30,10 +30,13 @@
     Terms And Conditions: <asp:TextBox ID="txtTerms" runat="server" TextMode="MultiLine" MaxLength="7000" Width="300" Height="300" />
 </div>
 <div>
-    Home Page Message: <asp:TextBox runat="server" ID="txtHomePageMessage"></asp:TextBox>
+    Home Page Message: <asp:TextBox runat="server" ID="txtHomePageMessage" TextMode="MultiLine" Width="400" Height="400"></asp:TextBox>
 </div>
 <div>
     Company Address: <asp:TextBox MaxLength="500" ID="txtAddress" runat="server" TextMode="MultiLine" Width="200" Height="200" />
+</div>
+<div>
+    iTunes Url: <asp:TextBox runat="server" ID="txtItunesUrl"></asp:TextBox>
 </div>
 <div>
     <asp:Button ID="btnSaveSettings" runat="server" Text="Save Settings" 

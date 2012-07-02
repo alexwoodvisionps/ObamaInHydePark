@@ -94,6 +94,15 @@ namespace WoodenSoft.ObamaInHydePark.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtAddress;
         
         /// <summary>
+        /// txtItunesUrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtItunesUrl;
+        
+        /// <summary>
         /// btnSaveSettings control.
         /// </summary>
         /// <remarks>

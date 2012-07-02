@@ -12,5 +12,6 @@ namespace WoodenSoft.ObamaInHydePark.Components.DataLayer.Models
         public string HomePageMessage { get; set; }
         public string ContactEmail { get; set; }
         public string Terms { get; set; }
+        public string ITunesUrl { get; set; }
     }
 }

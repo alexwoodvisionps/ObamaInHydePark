@@ -41,7 +41,8 @@ namespace WoodenSoft.ObamaInHydePark.Admin
                         txtTerms.Text = settings.Terms;
                     if (!string.IsNullOrEmpty(settings.HomePageMessage))
                         txtHomePageMessage.Text = settings.HomePageMessage;
-                    
+                    if (!string.IsNullOrEmpty(settings.ITunesUrl))
+                        txtItunesUrl.Text = settings.ITunesUrl;
                 }
              
             }
@@ -70,7 +71,7 @@ namespace WoodenSoft.ObamaInHydePark.Admin
             var settings = _settingRepository.GetSettings() ?? new Settings();
             settings.ContactAddress = StringHelper.RemovePossibleXSS(txtAddress.Text);
             settings.AboutUs = StringHelper.RemovePossibleXSS(txtDescription.Text);
-           
+            settings.ITunesUrl = txtItunesUrl.Text;
             settings.ContactPhone = StringHelper.RemovePossibleXSS(txtPhone.Text);
             //ConfigurationManager.AppSettings["RollinSettingsDir"]
            
@@ -80,8 +81,8 @@ namespace WoodenSoft.ObamaInHydePark.Admin
                    
             if(fuCompanyLogo.HasFile)
             {
-                settings.LogoUrl = ConfigurationManager.AppSettings["RollinSettingsDir"] + fuCompanyLogo.FileName;
-                fuCompanyLogo.SaveAs(Server.MapPath(ConfigurationManager.AppSettings["RollinSettingsDir"]) + fuCompanyLogo.FileName);
+                settings.LogoUrl = ConfigurationManager.AppSettings["SettingsDir"] + fuCompanyLogo.FileName;
+                fuCompanyLogo.SaveAs(Server.MapPath(ConfigurationManager.AppSettings["SettingsDir"]) + fuCompanyLogo.FileName);
             }
             else
             {

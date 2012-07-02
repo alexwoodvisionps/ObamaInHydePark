@@ -57,7 +57,7 @@
     <Content Include="Admin\Billing.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\SiteManager.aspx" />
-    <Content Include="BuyNow.aspx" />
+    <Content Include="assets\ico\favicon.ico" />
     <Content Include="Contact.aspx" />
     <Content Include="css\blank.gif" />
     <Content Include="css\bootstrap-responsive.css" />
@@ -169,13 +169,6 @@
     <Compile Include="Admin\SiteManager.aspx.designer.cs">
       <DependentUpon>SiteManager.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BuyNow.aspx.cs">
-      <DependentUpon>BuyNow.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BuyNow.aspx.designer.cs">
-      <DependentUpon>BuyNow.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Components\BuisinessLogic\Common\Emailer.cs" />
     <Compile Include="Components\BuisinessLogic\Common\EmailerFactory.cs" />
     <Compile Include="Components\BuisinessLogic\Common\GeoCoder.cs" />
@@ -263,6 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="settings\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
