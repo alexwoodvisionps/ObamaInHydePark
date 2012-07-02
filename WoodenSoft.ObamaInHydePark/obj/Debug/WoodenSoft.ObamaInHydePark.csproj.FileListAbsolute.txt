@@ -1,0 +1,4 @@
+C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\bin\WoodenSoft.ObamaInHydePark.dll
+C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\bin\WoodenSoft.ObamaInHydePark.pdb
+C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\obj\Debug\WoodenSoft.ObamaInHydePark.dll
+C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\obj\Debug\WoodenSoft.ObamaInHydePark.pdb

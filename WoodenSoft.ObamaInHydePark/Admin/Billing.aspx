@@ -1,0 +1,25 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" EnableEventValidation="false" AutoEventWireup="true" CodeBehind="Billing.aspx.cs" Inherits="WoodenSoft.ObamaInHydePark.Admin.Billing" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<div>
+Customer Billing:
+</div>
+<asp:GridView ID="gvUsers" runat="server" AllowSorting="true" AllowPaging="true" AutoGenerateColumns="false" >
+    <Columns>
+        <asp:BoundField DataField="Email" HeaderText="Email" />
+        <asp:BoundField DataField="OrderNumber" HeaderText="Order Number"/>
+        <asp:TemplateField>
+            <HeaderTemplate>Has Been Processed?</HeaderTemplate>
+            <ItemTemplate>
+                <%#Eval("HasBeenProcessed").ToString() == "0" ? "No" : "Yes" %>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField>
+            <ItemTemplate>
+                <asp:Button ID="btnEmail" runat="server" Text="Resend email To Customer" OnClick="EmailCustomer" CommandArgument='<%# Eval("Id") %>' />
+            </ItemTemplate>
+        </asp:TemplateField>
+     </Columns>
+</asp:GridView>
+</asp:Content>
