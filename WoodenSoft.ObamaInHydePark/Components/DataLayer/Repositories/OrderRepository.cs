@@ -11,24 +11,31 @@ namespace WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories
 {
     public class OrderRepository: GenericRepository<Order>, IOrderRepository
     {
-        public void PlaceOrder(Order order)
+        public void PlaceOrder(Order order, ProcessedValue type)
         {
             ExecuteNonQuery(
-                "INSERT INTO Orders(HasBeenProcessed, Email, OrderNumber) Values(0, @email, '" +
+                "INSERT INTO Orders(HasBeenProcessed, Email, OrderNumber) Values(" + ((int)type) + ", @email, '" +
                 order.OrderNumber + "')",
                 new[] {new SqlParameter("@email", order.Email)});
         }
-        public bool ValidateOrder(string orderNumber)
+        public bool ValidateOrder(string orderNumber, ProcessedValue notProcessedNumber)
         {
             var dt =
                 ExecuteQuery("SELECT * FROM Orders WHERE OrderNumber = '" + orderNumber +
-                             "' AND HasBeenProcessed = 0");
+                             "' AND HasBeenProcessed = " + ((int)notProcessedNumber));
             return dt.Rows.Count > 0;
         }
 
         public Order GetById(int id)
         {
             return base.GetById(id, "Orders", new Order());
+        }
+
+        public void Reset(Order order)
+        {
+            if (order.HasBeenProcessed % 2 == 0)
+                return;
+            ExecuteNonQuery("Update Orders Set HasBeenProcessed = " + (order.HasBeenProcessed - 1) + " WHERE Id = " + order.Id);
         }
 
         public List<Order> GetAllOrders()
@@ -38,7 +45,9 @@ namespace WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories
 
         public void FulFillOrder(Order order)
         {
-            ExecuteNonQuery("Update Orders Set HasBeenProcessed = 1 WHERE OrderNumber = " + order.OrderNumber);
+            if (order.HasBeenProcessed % 2 == 1)
+                return;
+            ExecuteNonQuery("Update Orders Set HasBeenProcessed = " + (order.HasBeenProcessed +1) + " WHERE Id = " + order.Id);
         }
     }
 }

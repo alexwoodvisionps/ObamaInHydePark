@@ -8,10 +8,11 @@ namespace WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories.Interface
 {
     public interface IOrderRepository
     {
-        void PlaceOrder(Order order);
+        void PlaceOrder(Order order, ProcessedValue type);
         List<Order> GetAllOrders();
         void FulFillOrder(Order order);
-        bool ValidateOrder(string orderNumber);
+        bool ValidateOrder(string orderNumber, ProcessedValue notProcessedNumber);
         Order GetById(int id);
+        void Reset(Order order);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Net.Mail;
+﻿using System.Net;
+using System.Net.Mail;
 
 namespace WoodenSoft.ObamaInHydePark.Components.BuisinessLogic.Common
 {
@@ -29,6 +30,14 @@ namespace WoodenSoft.ObamaInHydePark.Components.BuisinessLogic.Common
             mailMessage.Body = body;
             mailMessage.IsBodyHtml = true;
             mailMessage.Subject = subject;
+            if(string.IsNullOrEmpty(_username))
+                smtpClient.Credentials = CredentialCache.DefaultNetworkCredentials;
+            else
+            {
+                smtpClient.Credentials = new NetworkCredential(_username,_password);
+            }
+            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+
             smtpClient.Send(mailMessage);
         }
     }

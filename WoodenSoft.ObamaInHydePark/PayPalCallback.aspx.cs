@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Globalization;
 using System.Linq;
 using System.Web;
@@ -15,20 +16,31 @@ namespace WoodenSoft.ObamaInHydePark
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (string.Compare(Request["payment_status"], "VERIFIED", true, CultureInfo.CurrentCulture) != 0) 
+            var str = Request.Params.AllKeys.Aggregate("", (current, key) => current + (key + ":" + Request[key]));
+            var emailer = new Emailer(ConfigurationManager.AppSettings["SmtpServer"], "", "", 25);
+            emailer.SendHtmlEmail(ConfigurationManager.AppSettings["FromEmail"], "woodensdinc@gmail.com", "Obama in hyde park", str);
+            if (string.Compare(Request["payment_status"], "Completed", true, CultureInfo.CurrentCulture) != 0 && !string.IsNullOrEmpty(Request["invoice"])) 
                 return;
             try
             {
+                var orderNum = Guid.NewGuid().ToString();
                 var order = new Order
                                 {
                                     Email = Session["Email"].ToString(),
                                     HasBeenProcessed = 0,
-                                    OrderNumber = Guid.NewGuid().ToString()
+                                    OrderNumber = orderNum
                                 };
+                var order2 = new Order
+                                 {
+                                     Email = Session["Email"].ToString(),
+                                     HasBeenProcessed = 2,
+                                     OrderNumber = orderNum
+                                 };
                 var orderRepo = new OrderRepository();
                 orderRepo.PlaceOrder(order);
-                EmailerFactory.SendDownloadLink(order);
-                litMessage.Text = "The Obama Tour Link Was Sent To Your Email! Click It To Download It!";
+                orderRepo.PlaceOrder(order2);
+                EmailerFactory.SendDownloadLink(order, order2);
+                litMessage.Text = "The Obama Tour Link Was Sent To Your Email! Click The Link To Download It!";
             }
             catch(Exception ex)
             {

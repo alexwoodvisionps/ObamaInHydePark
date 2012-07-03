@@ -8,6 +8,7 @@ using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using WoodenSoft.ObamaInHydePark.Components.BuisinessLogic.Common;
+using WoodenSoft.ObamaInHydePark.Components.DataLayer.Models;
 using WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories;
 using WoodenSoft.ObamaInHydePark.Controls;
 
@@ -17,6 +18,7 @@ namespace WoodenSoft.ObamaInHydePark
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             try
             {
                 BindMap();
@@ -58,7 +60,20 @@ namespace WoodenSoft.ObamaInHydePark
             //var json = js.Serialize(mapPoints);
             //hf.Value = json;
             //pnlMap.Controls.Add(hf);
-            pnlMap.Controls.Add(litDirections);
+            if (!string.IsNullOrEmpty(Request["OrderNumber"]))
+            {
+                var orderRepo = new OrderRepository();
+                if (orderRepo.ValidateOrder(Request["OrderNumber"], ProcessedValue.Map))
+                {
+                    pnlMap.Controls.Add(litDirections);
+                    var order1 =
+                        orderRepo.GetAllOrders().First(
+                            x =>
+                            x.OrderNumber == Request["OrderNumber"] && x.HasBeenProcessed == (int)ProcessedValue.Map);
+                    orderRepo.FulFillOrder(order1);
+                }
+            }
+            
         }
     }
 }

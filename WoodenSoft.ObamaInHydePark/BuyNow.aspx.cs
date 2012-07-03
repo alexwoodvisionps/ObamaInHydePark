@@ -11,7 +11,7 @@ namespace WoodenSoft.ObamaInHydePark
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Redirect("https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_xclick&hosted_button_id=95FHU2RTMYTTC");
         }
     }
 }

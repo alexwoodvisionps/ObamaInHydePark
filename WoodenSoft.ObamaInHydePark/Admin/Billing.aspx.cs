@@ -18,9 +18,10 @@ namespace WoodenSoft.ObamaInHydePark.Admin
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblError.Text = "";
             if(!IsPostBack)
             {
-                ViewState["sortField"] = "LastName";
+                ViewState["sortField"] = "Email";
                 ViewState["sortDirection"] = "ASC";
             }
             BindData();
@@ -60,11 +61,25 @@ namespace WoodenSoft.ObamaInHydePark.Admin
             gvUsers.DataSource = orders;
             gvUsers.DataBind();
         }
+        protected void ResetOrderNumber(object sender, EventArgs e)
+        {
+            var orderNumber = ((Button) sender).CommandArgument;
+            var orders = _orderRepo.GetAllOrders().Where(x => x.OrderNumber == orderNumber);
+            foreach (var order in orders)
+            {
+                _orderRepo.Reset(order);
+            }
+            lblError.Text = "<strong>Order Reset Successfully</strong>";
+            BindData();
+        }
 
         protected void EmailCustomer(object sender, EventArgs e)
         {
-            var order = _orderRepo.GetById(int.Parse(((Button) sender).CommandArgument));
-            EmailerFactory.SendDownloadLink(order);
+            var orderNumber = ((Button) sender).CommandArgument;
+            var orders = _orderRepo.GetAllOrders().Where(x => x.OrderNumber == orderNumber).ToArray();
+            EmailerFactory.SendDownloadLink(orders[0], orders[1]);
+            lblError.Text = "<strong>Order Sent To Customer Successfully</strong>";
+            BindData();
         }
     }
 }

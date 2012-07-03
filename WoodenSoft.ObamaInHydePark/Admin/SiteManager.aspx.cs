@@ -131,6 +131,7 @@ namespace WoodenSoft.ObamaInHydePark.Admin
                 newPoint.Ordinal = int.Parse(txtMapPointOrdinal.Text);
                 mapPoints.Add(newPoint);
                 _mapPointsRepo.Save(mapPoints);
+                BindMapPoints();
             }
             catch(Exception ex)
             {
