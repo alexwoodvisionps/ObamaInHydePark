@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -35,6 +36,11 @@ namespace WoodenSoft.ObamaInHydePark
                     var orderRepo = new OrderRepository();
                     orderRepo.PlaceOrder(order, ProcessedValue.Download);
                     orderRepo.PlaceOrder(order2, ProcessedValue.Map);
+                    EmailerFactory.NewDefaultInstance().SendHtmlEmail(ConfigurationManager.AppSettings["FromEmail"],
+                                  ConfigurationManager.AppSettings["ToshEmail"],
+                                  "Order Placed Please Verify And Ship Via The Control Panel",
+                                  "Please Go To obamainhydepark.com/Admin/AdminPanel.aspx And Verify & Approve The Order Of Order Id = " +
+                                  order.OrderNumber);
                 }
                 catch(Exception ex)
                 {

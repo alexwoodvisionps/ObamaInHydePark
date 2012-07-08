@@ -65,10 +65,50 @@
 //        js = d.createElement('script'); js.id = id; js.async = true;
 //        js.src = "//connect.facebook.net/en_US/all.js";
 //        d.getElementsByTagName('head')[0].appendChild(js);
-    //    } (document));
+//    } (document));
     
 
 </script>
+ <script type="text/javascript">
+     $(document).ready(function () {
+         $('.liglow').removeClass("active");
+         $('.liglow2').removeClass("active");
+         var url = window.location.toString().toLowerCase();
+         if (url.indexOf("download.aspx") != -1) {
+             $('#side_2').addClass("active");
+             $('#top_2').addClass("active");
+         }
+         else if (url.indexOf('map.aspx') != -1) {
+             $('#side_3').addClass("active");
+             $('#top_3').addClass("active");
+         }
+         else if (url.indexOf("about.aspx") != -1) {
+             $('#side_4').addClass("active");
+             $('#top_4').addClass("active");
+         }
+         else if (url.indexOf("contact.aspx") != -1) {
+             $('#side_5').addClass("active");
+             $('#top_5').addClass("active");
+         } else {
+             $('#side_1').addClass("active");
+             $('#top_1').addClass("active");
+         }
+         $('.liglow').click(function () {
+             $('.liglow').removeClass("active");
+             $('.liglow2').removeClass("active");
+             $(this).addClass("active");
+             var id = $(this).attr('id').substring($(this).attr('id').length - 1, $(this).attr('id').length);
+             $('#top_' + id).addClass('active');
+         });
+         $('.liglow2').click(function () {
+             $('.liglow').removeClass("active");
+             $('.liglow2').removeClass("active");
+             $(this).addClass("active");
+             var id = $(this).attr('id').substring($(this).attr('id').length - 1, $(this).attr('id').length);
+             $('#side_' + id).addClass('active');
+         });
+     });
+    </script>
     <form id="form1" runat="server"> 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -92,28 +132,28 @@
           </div>--%>
           <div class="nav-collapse">
             <ul class="nav">
-           <li class="active"><a href="/Default.aspx">Home</a></li>
-              <li class="active"><a href="/Download.aspx">Download Audio/Visual Tour</a></li>
-              <li class="active"><a href="/Map.aspx">See Tour Map</a></li>
-              <li class="active"><a href="/About.aspx">About</a></li>
-              <li class="active"><a href="/Contact.aspx">Contact</a></li>
+              <li id="top_1" class="active liglow2"><a href="/Default.aspx">Home</a></li>
+              <li id="top_2" class="liglow2"><a href="/Download.aspx">Download Audio/Visual Tour</a></li>
+              <li id="top_3" class="liglow2"><a href="/Map.aspx">See Tour Map</a></li>
+              <li id="top_4" class="liglow2"><a href="/About.aspx">About</a></li>
+              <li id="top_5" class="liglow2"><a href="/Contact.aspx">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-
+   
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">General Menu</li>
-              <li class="active"><a href="/Default.aspx">Home</a></li>
-              <li class="active"><a href="/Download.aspx">Download Audio/Visual Tour</a></li>
-              <li class="active"><a href="/Map.aspx">See Tour Map</a></li>
-              <li class="active"><a href="/About.aspx">About</a></li>
-              <li class="active"><a href="/Contact.aspx">Contact</a></li>
+              <li id="side_1" class="active liglow"><a href="/Default.aspx">Home</a></li>
+              <li id="side_2" class="liglow"><a href="/Download.aspx">Download Audio/Visual Tour</a></li>
+              <li id="side_3" class="liglow"><a href="/Map.aspx">See Tour Map</a></li>
+              <li id="side_4" class="liglow"><a href="/About.aspx">About</a></li>
+              <li id="side_5" class="liglow"><a href="/Contact.aspx">Contact</a></li>
              
             </ul>
           </div><!--/.well -->

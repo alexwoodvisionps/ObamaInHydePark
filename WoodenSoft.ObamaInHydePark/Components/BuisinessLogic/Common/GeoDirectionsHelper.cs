@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Web;
 using System.Xml;
 using WoodenSoft.ObamaInHydePark.Components.DataLayer.Models;
@@ -18,11 +19,13 @@ namespace WoodenSoft.ObamaInHydePark.Components.BuisinessLogic.Common
             MapPoint oldPoint = null;
             foreach (var mapPoint in mapPoints)
             {
+                
                 if(oldPoint == null)
                 {
                     oldPoint = mapPoint;
                     continue;                    
                 }
+                Thread.Sleep(500);
                 var request =
                     WebRequest.Create("http://maps.googleapis.com/maps/api/directions/xml?origin=" + oldPoint.Address +
                                       "&destination=" + mapPoint.Address + "&mode=walking&sensor=true");
@@ -32,8 +35,12 @@ namespace WoodenSoft.ObamaInHydePark.Components.BuisinessLogic.Common
                 var doc = new XmlDocument();
                 doc.LoadXml(xml);
                 var legNodes = doc.SelectNodes("//leg");
-                if(legNodes == null)
-                    return null;
+                if (legNodes == null)
+                {
+                    //steps.Add(xml);
+                    continue;
+                    
+                }
                 var sb = new StringBuilder();
                 foreach (XmlElement legNode in legNodes)
                 {
@@ -45,8 +52,10 @@ namespace WoodenSoft.ObamaInHydePark.Components.BuisinessLogic.Common
                         sb.Append(stepsNode.SelectSingleNode("html_instructions").InnerText);
                     }
                 }
+                //sb.AppendLine(xml);
                 steps.Add(sb.ToString());
                 oldPoint = mapPoint;
+                
             }
             return steps;
         }

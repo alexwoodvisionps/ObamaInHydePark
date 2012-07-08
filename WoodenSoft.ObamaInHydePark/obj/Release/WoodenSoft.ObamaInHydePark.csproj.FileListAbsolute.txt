@@ -2,3 +2,4 @@ C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\bin\WoodenSoft
 C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\bin\WoodenSoft.ObamaInHydePark.pdb
 C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\obj\Release\WoodenSoft.ObamaInHydePark.dll
 C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\obj\Release\WoodenSoft.ObamaInHydePark.pdb
+C:\Projects\WoodenSoft.ObamaInHydePark\WoodenSoft.ObamaInHydePark\obj\Release\WoodenSoft.ObamaInHydePark.csprojResolveAssemblyReference.cache

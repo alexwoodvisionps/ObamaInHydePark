@@ -20,7 +20,7 @@ namespace WoodenSoft.ObamaInHydePark.Admin
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            gvMapPoints.RowDeleting += new GridViewDeleteEventHandler(gvMapPoints_RowDeleting);
+         
             if(!IsPostBack)
             {
                 var settings = _settingRepository.GetSettings();
@@ -49,10 +49,11 @@ namespace WoodenSoft.ObamaInHydePark.Admin
             BindMapPoints();
         }
 
-        protected void gvMapPoints_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        protected void DeleteMapPoint(object sender, EventArgs e)
         {
-            var id = int.Parse(gvMapPoints.Rows[e.RowIndex].Cells[0].Text);
-
+            var id = int.Parse(((Button) sender).CommandArgument);
+            _mapPointsRepo.Delete(id);
+            BindMapPoints();
         }
         private void BindMapPoints()
         {
@@ -123,14 +124,14 @@ namespace WoodenSoft.ObamaInHydePark.Admin
         {
             try
             {
-                var mapPoints = _mapPointsRepo.GetAllPoints();
+                //var mapPoints = _mapPointsRepo.GetAllPoints();
                 var newPoint = new MapPoint {Address = txtMapPointAddress.Text, Name = txtMapPointName.Text};
                 var coordinates = GeoCoder.GeoCode(txtMapPointAddress.Text);
                 newPoint.Lat = coordinates.Lat;
                 newPoint.Long = coordinates.Long;
                 newPoint.Ordinal = int.Parse(txtMapPointOrdinal.Text);
-                mapPoints.Add(newPoint);
-                _mapPointsRepo.Save(mapPoints);
+                //mapPoints.Add(newPoint);
+                _mapPointsRepo.Save(newPoint);
                 BindMapPoints();
             }
             catch(Exception ex)

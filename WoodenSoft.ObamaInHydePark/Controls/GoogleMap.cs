@@ -18,7 +18,7 @@ namespace WoodenSoft.ObamaInHydePark.Controls
         public override void RenderControl(HtmlTextWriter writer)
         {
             var sb = new StringBuilder();
-            var url = "http://maps.googleapis.com/maps/api/staticmap?center=Hyde Park, Chicago, IL&zoom=14&size=" + Width +
+            var url = "http://maps.googleapis.com/maps/api/staticmap?center=Hyde Park, Chicago, IL&zoom=10&size=" + Width +
                       "x" + Height + "&markers=color:" + MarkerColor + "|label:Stop|";
             foreach (var mapPoint in GeoPoints)
             {

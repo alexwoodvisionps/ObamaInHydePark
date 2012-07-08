@@ -8,20 +8,27 @@ using WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories.Interfaces;
 
 namespace WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories
 {
-    public class MapPointRepository : GenericRepository<MapPoint>,IMapPointsRepository
+    public class MapPointRepository : GenericRepository<MapPoint>, IMapPointsRepository
     {
-        public void Save(IEnumerable<MapPoint> mapPoints)
+        public void Save(MapPoint mapPoint)
         {
-            ExecuteNonQuery("Delete From MapPoints");
-            foreach (var sqlParams in mapPoints.Select(mapPoint => new[] {new SqlParameter("@Lat", mapPoint.Lat), 
-                                                                          new SqlParameter("@Long", mapPoint.Long), 
-                                                                          new SqlParameter("@ordinal", mapPoint.Ordinal), 
-                                                                          new SqlParameter("@address", mapPoint.Address), 
-                                                                          new SqlParameter("@name", mapPoint.Name)}))
+
+            var param = new[]
+                            {
+                                new SqlParameter("@Lat", mapPoint.Lat),
+                                new SqlParameter("@Long", mapPoint.Long),
+                                new SqlParameter("@ordinal", mapPoint.Ordinal),
+                                new SqlParameter("@address", mapPoint.Address),
+                                new SqlParameter("@name", mapPoint.Name)
+                            };
+            
             {
-                ExecuteNonQuery("INSERT INTO MapPoints(Ordinal, Long, Lat, Name, [Address]) Values(@ordinal, @Long, @Lat, @name, @address)", sqlParams);
+                ExecuteNonQuery(
+                    "INSERT INTO MapPoints(Ordinal, Long, Lat, Name, [Address]) Values(@ordinal, @Long, @Lat, @name, @address)",
+                    param);
             }
         }
+
         public void Delete(int id)
         {
             ExecuteNonQuery("Delete From MapPoints WHERE Id = " + id);
@@ -32,4 +39,4 @@ namespace WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories
             return ExecuteQuery("SELECT * FROM MapPoints").DataTableToList<MapPoint>(new MapPoint());
         }
     }
-}
+} 

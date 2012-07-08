@@ -33,16 +33,7 @@ namespace WoodenSoft.ObamaInHydePark
             var mapPoints = new MapPointRepository().GetAllPoints().OrderBy( x=> x.Ordinal);
             if (!mapPoints.Any())
                 return;
-            var litDirections = new Literal();
-            var sb = new StringBuilder();
-            var steps = GeoDirectionsHelper.GetDirectionSteps(mapPoints);
-            sb.Append("<ol class='directions'>");
-            foreach (var step in steps)
-            {
-                sb.Append("<li>" + step + "</li>");
-            }
-            sb.Append("</ol>");
-            litDirections.Text = sb.ToString();
+           
             //var hf = new HiddenField();
             //hf.ID = "hfMapJson";
             //hf.ClientIDMode = ClientIDMode.Predictable;
@@ -65,6 +56,16 @@ namespace WoodenSoft.ObamaInHydePark
                 var orderRepo = new OrderRepository();
                 if (orderRepo.ValidateOrder(Request["OrderNumber"], ProcessedValue.Map))
                 {
+                    var litDirections = new Literal();
+                    var sb = new StringBuilder();
+                    var steps = GeoDirectionsHelper.GetDirectionSteps(mapPoints);
+                    sb.Append("<ol class='directions'>");
+                    foreach (var step in steps)
+                    {
+                        sb.Append("<li>" + step + "</li>");
+                    }
+                    sb.Append("</ol>");
+                    litDirections.Text = sb.ToString();
                     pnlMap.Controls.Add(litDirections);
                     var order1 =
                         orderRepo.GetAllOrders().First(

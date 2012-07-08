@@ -8,7 +8,7 @@ namespace WoodenSoft.ObamaInHydePark.Components.DataLayer.Repositories.Interface
 {
     public interface IMapPointsRepository
     {
-        void Save(IEnumerable<MapPoint> mapPoints);
+        void Save(MapPoint mapPoint);
         List<MapPoint> GetAllPoints();
         void Delete(int id);
     }
