@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
 using System.Configuration;
 using System.Web.UI.WebControls;
 using WoodenSoft.ObamaInHydePark.Components.BuisinessLogic.Common;
@@ -12,8 +14,10 @@ namespace WoodenSoft.ObamaInHydePark.Admin
     {
         private readonly ISettingsRepository _settingRepository;
         private readonly IMapPointsRepository _mapPointsRepo;
+        private readonly IImageRepository _imageRepo;
         public SiteManager()
         {
+            _imageRepo = new ImageRepository();
             _mapPointsRepo = new MapPointRepository();
             _settingRepository = new SettingsRepository();
         }
@@ -46,6 +50,7 @@ namespace WoodenSoft.ObamaInHydePark.Admin
                 }
              
             }
+            BindImages();
             BindMapPoints();
         }
 
@@ -64,6 +69,29 @@ namespace WoodenSoft.ObamaInHydePark.Admin
             }
             gvMapPoints.DataSource = points;
             gvMapPoints.DataBind();
+        }
+        protected void DeleteImage(object sender, EventArgs e)
+        {
+            var btn = (Button) sender;
+            var id = int.Parse(btn.CommandArgument);
+            var img = _imageRepo.GetAll().Single(x => x.Id == id);
+            _imageRepo.Delete(id);
+            File.Delete(Server.MapPath(img.Url));
+            BindImages();
+            BindMapPoints();
+        }
+        protected void BindImages()
+        {
+            gvImages.DataSource = _imageRepo.GetAll().OrderBy(x => x.Name).ToList();
+            gvImages.DataBind();
+        }
+
+        protected void UploadImage(object sender, EventArgs e)
+        {
+            _imageRepo.Save(new Components.DataLayer.Models.Image{Name = txtStopName.Text, Url = ConfigurationManager.AppSettings["ImageDir"]  + fuTourImage.FileName});
+            fuTourImage.SaveAs(Server.MapPath(ConfigurationManager.AppSettings["ImageDir"])  + fuTourImage.FileName);
+            BindImages();
+            BindMapPoints();
         }
 
         protected void btnSaveSettings_Click(object sender, EventArgs e)

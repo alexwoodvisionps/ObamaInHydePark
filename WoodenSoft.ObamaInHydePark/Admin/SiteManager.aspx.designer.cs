@@ -112,6 +112,33 @@ namespace WoodenSoft.ObamaInHydePark.Admin {
         protected global::System.Web.UI.WebControls.Button btnSaveSettings;
         
         /// <summary>
+        /// gvImages control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvImages;
+        
+        /// <summary>
+        /// txtStopName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtStopName;
+        
+        /// <summary>
+        /// fuTourImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fuTourImage;
+        
+        /// <summary>
         /// gvMapPoints control.
         /// </summary>
         /// <remarks>

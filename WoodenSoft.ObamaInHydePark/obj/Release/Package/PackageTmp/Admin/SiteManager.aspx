@@ -43,6 +43,29 @@
         onclick="btnSaveSettings_Click" />
 </div>
 <div>
+    Tour Images:
+</div>
+<div>
+    Current Images:
+</div>
+<div>
+    <asp:GridView runat="server" ID="gvImages" AutoGenerateColumns="False" AllowSorting="False" AllowPaging="False">
+        <Columns>
+            <asp:BoundField DataField="Name" HeaderText="Image Name"/>
+            <asp:TemplateField>
+                <ItemTemplate>
+                    <asp:Image runat="server" Width="300" Height="280" ImageUrl='<%#Eval("Url") %>' AlternateText='<%#Eval("Name") %>'/>
+                    <asp:Button runat="server" ID="btnDelete" OnClick="DeleteImage" CommandArgument='<%#Eval("Id") %>' Text="Delete"/>
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+    </asp:GridView>
+</div>
+<div> Tour Stop Name: <asp:TextBox runat="server" ID="txtStopName"></asp:TextBox></div>
+<div>
+    Upload New Tour Image: <asp:FileUpload runat="server" ID="fuTourImage"/> <asp:Button runat="server" Text="Upload" OnClick="UploadImage"/>
+</div> 
+<div>
     <div>
         Walking Tour Points For The Map
     </div>

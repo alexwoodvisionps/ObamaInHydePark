@@ -72,11 +72,13 @@
     <Content Include="Admin\SiteManager.aspx" />
     <Content Include="assets\ico\favicon.ico" />
     <Content Include="Contact.aspx" />
+    <Content Include="css\agile_carousel.css" />
     <Content Include="css\blank.gif" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-responsive.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\components\plans.css" />
     <Content Include="css\facebook.css" />
     <Content Include="css\fancybox-x.png" />
     <Content Include="css\fancybox-y.png" />
@@ -97,6 +99,9 @@
     <Content Include="css\fancy_title_main.png" />
     <Content Include="css\fancy_title_over.png" />
     <Content Include="css\fancy_title_right.png" />
+    <Content Include="css\focus-responsive.css" />
+    <Content Include="css\focus.css" />
+    <Content Include="css\font-awesome.css" />
     <Content Include="css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="css\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -112,10 +117,36 @@
     <Content Include="css\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="css\jquery-ui-1.8.18.custom.css" />
     <Content Include="css\jquery.fancybox-1.3.4.css" />
+    <Content Include="css\pages\about.css" />
+    <Content Include="css\pages\contact.css" />
+    <Content Include="css\pages\homepage.css" />
+    <Content Include="css\pages\services.css" />
     <Content Include="Default.aspx" />
     <Content Include="Download.aspx" />
+    <Content Include="img\bg.png" />
+    <Content Include="img\footer-logo.htm" />
+    <Content Include="img\footer-logo.jpg" />
+    <Content Include="img\footer-logo.png" />
+    <Content Include="img\gallery\1_large.jpg" />
+    <Content Include="img\gallery\1_small.jpg" />
+    <Content Include="img\gallery\2_large.jpg" />
+    <Content Include="img\gallery\2_small.jpg" />
+    <Content Include="img\gallery\3_large.jpg" />
+    <Content Include="img\gallery\3_small.jpg" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\masthead\masthead-2.jpg" />
+    <Content Include="img\masthead\masthead-3.jpg" />
+    <Content Include="img\masthead\masthead-4.jpg" />
+    <Content Include="img\masthead\masthead.jpg" />
+    <Content Include="img\profiles\profile-1.png" />
+    <Content Include="img\profiles\profile-2.png" />
+    <Content Include="img\profiles\profile-3.png" />
+    <Content Include="img\responsive-nav-bg.png" />
+    <Content Include="img\social\social-sprite.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\focus.js" />
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="js\jquery-ui-1.8.18.custom.min.js" />
     <Content Include="js\jquery.carouFredSel-5.6.1.js" />
@@ -126,11 +157,18 @@
     <Content Include="js\jquery.fancybox-thumbs.js" />
     <Content Include="js\jquery.fancybox.pack.js" />
     <Content Include="js\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="js\plugins\faq\faq.css" />
+    <Content Include="js\plugins\faq\faq.js" />
+    <Content Include="js\slides.min.jquery.js" />
     <Content Include="js\twitterjs-2.0.0.min.js" />
     <Content Include="Map.aspx" />
     <Content Include="SaveEmail.aspx" />
     <Content Include="settings\ObamaPic.jpg" />
     <Content Include="TermsAndConditions.aspx" />
+    <Content Include="themes\default\arrows.png" />
+    <Content Include="themes\default\bullets.png" />
+    <Content Include="themes\default\default.css" />
+    <Content Include="themes\default\loading.gif" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -190,10 +228,13 @@
     <Compile Include="Components\BuisinessLogic\Common\StringHelper.cs" />
     <Compile Include="Components\DataLayer\Common\GenericModelCreator.cs" />
     <Compile Include="Components\DataLayer\Common\GenericRepository.cs" />
+    <Compile Include="Components\DataLayer\Models\Image.cs" />
     <Compile Include="Components\DataLayer\Models\MapPoint.cs" />
     <Compile Include="Components\DataLayer\Models\Order.cs" />
     <Compile Include="Components\DataLayer\Models\ProcessedValue.cs" />
     <Compile Include="Components\DataLayer\Models\Settings.cs" />
+    <Compile Include="Components\DataLayer\Repositories\ImageRepository.cs" />
+    <Compile Include="Components\DataLayer\Repositories\Interfaces\IImageRepository.cs" />
     <Compile Include="Components\DataLayer\Repositories\Interfaces\IMapPointsRepository.cs" />
     <Compile Include="Components\DataLayer\Repositories\Interfaces\IOrderRepository.cs" />
     <Compile Include="Components\DataLayer\Repositories\Interfaces\ISettingsRepository.cs" />
@@ -263,6 +304,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
