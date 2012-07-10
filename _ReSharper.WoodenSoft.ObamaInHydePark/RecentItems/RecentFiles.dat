@@ -2,8 +2,6 @@
   <RecentFiles>
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:DataLayer/d:Repositories/f:OrderRepository.cs" caret="751" fromTop="10" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:BuisinessLogic/d:Common/f:EmailerFactory.cs" caret="1391" fromTop="19" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:BuisinessLogic/d:Common/f:GeoDirectionsHelper.cs" caret="516" fromTop="13" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Admin.Master.cs" caret="0" fromTop="0" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:SaveEmail.aspx.cs" caret="1418" fromTop="16" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:AdminPanel.aspx" caret="489" fromTop="7" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Billing.aspx" caret="466" fromTop="8" />
@@ -11,7 +9,6 @@
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:DataLayer/d:Repositories/d:Interfaces/f:IImageRepository.cs" caret="342" fromTop="11" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:DataLayer/d:Repositories/f:ImageRepository.cs" caret="737" fromTop="15" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:DataLayer/d:Models/f:Image.cs" caret="225" fromTop="9" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Login.aspx.cs" caret="745" fromTop="17" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Login.aspx" caret="0" fromTop="0" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:SiteManager.aspx" caret="2611" fromTop="18" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:SiteManager.aspx.cs" caret="3652" fromTop="13" />
@@ -29,7 +26,10 @@
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master.cs" caret="617" fromTop="7" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:css/f:bootstrap.css" caret="48317" fromTop="27" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:css/f:bootstrap.min.css" caret="74131" fromTop="27" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6259" fromTop="2" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:BuisinessLogic/d:Common/f:GeoDirectionsHelper.cs" caret="516" fromTop="13" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Admin.Master.cs" caret="0" fromTop="0" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Login.aspx.cs" caret="745" fromTop="17" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6369" fromTop="17" />
   </RecentFiles>
   <RecentEdits>
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="2145" fromTop="19" />
@@ -51,16 +51,16 @@
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="5196" fromTop="7" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6013" fromTop="16" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="362" fromTop="6" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6091" fromTop="9" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Web.config" caret="1134" fromTop="25" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:css/f:bootstrap.min.css" caret="74131" fromTop="27" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="1030" fromTop="3" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="704" fromTop="6" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="4559" fromTop="13" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6371" fromTop="6" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6358" fromTop="6" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="4286" fromTop="10" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6927" fromTop="18" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6259" fromTop="24" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6259" fromTop="2" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6914" fromTop="18" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6246" fromTop="24" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6246" fromTop="2" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6079" fromTop="2" />
   </RecentEdits>
 </RecentFiles>

@@ -142,7 +142,7 @@
     
   
     
-    <div id="content" class="span8">
+    <div id="content" >
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
