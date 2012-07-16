@@ -25,7 +25,7 @@ namespace WoodenSoft.ObamaInHydePark
             {
                 sb.Append("<div class='slide'>");
                 sb.AppendLine("<a href='#' title='" + image.Name + "' target='_blank'>");
-                sb.AppendLine("<img src='" + image.Url + "' alt='" + image.Name + "' width='570' height='270' /></a>");
+                sb.AppendLine("<img src='" + image.Url + "' alt='" + image.Name + "' style='width:'570';height:'270'' /></a>");
                 sb.AppendLine("<div class='caption' style='color : white'><p>" + image.Name + "</p></div></div>");
             }
             litCarousel.Text = sb.ToString();
@@ -33,6 +33,11 @@ namespace WoodenSoft.ObamaInHydePark
             if (settings == null)
                 return;
             litMessage.Text = settings.HomePageMessage;
+            if(!string.IsNullOrEmpty(settings.AboutUs))
+            {
+                var aboutUs = settings.AboutUs.Length > 100 ? settings.AboutUs.Substring(0, 100) : settings.AboutUs;
+                litAboutUs.Text = aboutUs;
+            }
         }
     }
 }

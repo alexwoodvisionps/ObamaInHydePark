@@ -71,6 +71,7 @@
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\SiteManager.aspx" />
     <Content Include="assets\ico\favicon.ico" />
+    <Content Include="channel.htm" />
     <Content Include="Contact.aspx" />
     <Content Include="css\agile_carousel.css" />
     <Content Include="css\blank.gif" />

@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="C:\AlexTest\PRivate\ObamaDeploy" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="Default.aspx" publishTime="07/09/2012 22:37:43" />
+    <file relUrl="Default.aspx" publishTime="07/16/2012 14:17:59" />
     <file relUrl="css/images/ui-bg_glass_75_dadada_1x400.png" publishTime="07/01/2012 00:33:05" />
     <file relUrl="Contact.aspx" publishTime="07/09/2012 21:08:02" />
-    <file relUrl="settings/ObamaPic.jpg" publishTime="07/03/2012 00:23:46" />
     <file relUrl="img/glyphicons-halflings-white.png" publishTime="07/09/2012 22:16:57" />
     <file relUrl="Admin/SiteManager.aspx" publishTime="07/09/2012 13:30:43" />
-    <file relUrl="img/profiles/profile-1.png" publishTime="07/09/2012 22:16:57" />
+    <file relUrl="channel.htm" publishTime="07/10/2012 18:51:52" />
     <file relUrl="css/fancybox.png" publishTime="07/02/2012 07:21:10" />
     <file relUrl="img/footer-logo.jpg" publishTime="07/09/2012 22:16:57" />
     <file relUrl="css/blank.gif" publishTime="07/02/2012 07:21:09" />
@@ -19,17 +18,16 @@
     <file relUrl="js/jquery-1.7.2.min.js" publishTime="07/01/2012 00:33:22" />
     <file relUrl="js/jquery.easing-1.3.pack.js" publishTime="07/02/2012 07:20:36" />
     <file relUrl="themes/default/loading.gif" publishTime="07/09/2012 13:23:34" />
-    <file relUrl="themes/default/default.css" publishTime="07/09/2012 13:23:34" />
+    <file relUrl="img/masthead/masthead-4.jpg" publishTime="07/09/2012 22:16:57" />
     <file relUrl="css/bootstrap-responsive.min.css" publishTime="07/01/2012 00:32:46" />
-    <file relUrl="bin/WoodenSoft.ObamaInHydePark.dll" publishTime="07/09/2012 22:39:26" />
+    <file relUrl="bin/WoodenSoft.ObamaInHydePark.dll" publishTime="07/16/2012 14:08:01" />
     <file relUrl="Admin/AdminPanel.aspx" publishTime="07/01/2012 15:49:29" />
     <file relUrl="css/images/ui-bg_glass_65_ffffff_1x400.png" publishTime="07/01/2012 00:33:05" />
     <file relUrl="img/footer-logo.htm" publishTime="07/09/2012 22:16:57" />
     <file relUrl="Tour/Web.config" publishTime="07/01/2012 04:22:44" />
     <file relUrl="img/gallery/3_small.jpg" publishTime="07/09/2012 22:16:57" />
     <file relUrl="css/fancybox-y.png" publishTime="07/02/2012 07:21:10" />
-    <file relUrl="css/focus-responsive.css" publishTime="07/09/2012 20:54:16" />
-    <file relUrl="bin/WoodenSoft.ObamaInHydePark.pdb" publishTime="07/09/2012 22:39:26" />
+    <file relUrl="bin/WoodenSoft.ObamaInHydePark.pdb" publishTime="07/16/2012 14:08:01" />
     <file relUrl="js/twitterjs-2.0.0.min.js" publishTime="07/01/2012 00:33:22" />
     <file relUrl="css/fancy_title_right.png" publishTime="07/02/2012 07:21:10" />
     <file relUrl="css/facebook.css" publishTime="07/01/2012 00:32:46" />
@@ -39,7 +37,7 @@
     <file relUrl="css/fancy_nav_left.png" publishTime="07/02/2012 07:21:09" />
     <file relUrl="js/focus.js" publishTime="07/09/2012 20:55:24" />
     <file relUrl="js/jquery.mousewheel-3.0.4.pack.js" publishTime="07/02/2012 07:20:36" />
-    <file relUrl="img/masthead/masthead-4.jpg" publishTime="07/09/2012 22:16:57" />
+    <file relUrl="css/fancy_close.png" publishTime="07/02/2012 07:21:09" />
     <file relUrl="TermsAndConditions.aspx" publishTime="07/09/2012 21:10:18" />
     <file relUrl="img/gallery/3_large.jpg" publishTime="07/09/2012 22:16:57" />
     <file relUrl="img/gallery/2_large.jpg" publishTime="07/09/2012 22:16:57" />
@@ -61,21 +59,21 @@
     <file relUrl="css/focus.css" publishTime="07/09/2012 20:54:16" />
     <file relUrl="css/fancy_shadow_e.png" publishTime="07/02/2012 07:21:09" />
     <file relUrl="css/images/ui-icons_cd0a0a_256x240.png" publishTime="07/01/2012 00:33:05" />
-    <file relUrl="Site.Master" publishTime="07/10/2012 12:08:54" />
+    <file relUrl="Site.Master" publishTime="07/16/2012 14:19:09" />
     <file relUrl="js/jquery.fancybox-1.3.4.pack.js" publishTime="07/02/2012 07:20:20" />
     <file relUrl="Web.config" publishTime="07/09/2012 23:05:30" />
     <file relUrl="js/jquery-ui-1.8.18.custom.min.js" publishTime="07/01/2012 00:33:22" />
     <file relUrl="img/gallery/1_small.jpg" publishTime="07/09/2012 22:16:57" />
+    <file relUrl="css/fancy_shadow_sw.png" publishTime="07/02/2012 07:21:09" />
     <file relUrl="css/images/ui-icons_454545_256x240.png" publishTime="07/01/2012 00:33:05" />
     <file relUrl="About.aspx" publishTime="07/09/2012 21:10:18" />
-    <file relUrl="js/plugins/faq/faq.js" publishTime="07/09/2012 20:55:47" />
     <file relUrl="assets/ico/favicon.ico" publishTime="07/02/2012 15:28:04" />
     <file relUrl="img/footer-logo.png" publishTime="07/09/2012 22:16:57" />
     <file relUrl="css/fancy_loading.png" publishTime="07/02/2012 07:21:09" />
     <file relUrl="css/fancy_title_left.png" publishTime="07/02/2012 07:21:10" />
-    <file relUrl="css/bootstrap.min.css" publishTime="07/09/2012 23:14:42" />
-    <file relUrl="css/fancy_close.png" publishTime="07/02/2012 07:21:09" />
-    <file relUrl="css/pages/homepage.css" publishTime="07/09/2012 20:54:41" />
+    <file relUrl="css/bootstrap.min.css" publishTime="07/10/2012 19:04:45" />
+    <file relUrl="settings/ObamaPic.jpg" publishTime="07/03/2012 00:23:46" />
+    <file relUrl="js/plugins/faq/faq.js" publishTime="07/09/2012 20:55:47" />
     <file relUrl="css/components/plans.css" publishTime="07/09/2012 20:55:04" />
     <file relUrl="js/jquery.fancybox-buttons.js" publishTime="07/02/2012 07:17:16" />
     <file relUrl="css/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="07/01/2012 00:33:05" />
@@ -100,13 +98,16 @@
     <file relUrl="js/slides.min.jquery.js" publishTime="07/09/2012 13:05:15" />
     <file relUrl="css/images/ui-icons_2e83ff_256x240.png" publishTime="07/01/2012 00:33:05" />
     <file relUrl="css/bootstrap.css" publishTime="07/01/2012 00:32:46" />
+    <file relUrl="themes/default/default.css" publishTime="07/09/2012 13:23:34" />
     <file relUrl="css/fancy_shadow_w.png" publishTime="07/02/2012 07:21:09" />
     <file relUrl="img/profiles/profile-3.png" publishTime="07/09/2012 22:16:57" />
     <file relUrl="css/pages/contact.css" publishTime="07/09/2012 20:54:41" />
+    <file relUrl="img/profiles/profile-1.png" publishTime="07/09/2012 22:16:57" />
     <file relUrl="themes/default/arrows.png" publishTime="07/09/2012 13:23:34" />
     <file relUrl="css/fancy_shadow_nw.png" publishTime="07/02/2012 07:21:09" />
-    <file relUrl="css/fancy_shadow_sw.png" publishTime="07/02/2012 07:21:09" />
-    <file relUrl="Download.aspx" publishTime="07/09/2012 21:10:43" />
+    <file relUrl="css/focus-responsive.css" publishTime="07/09/2012 20:54:16" />
+    <file relUrl="css/pages/homepage.css" publishTime="07/09/2012 20:54:41" />
+    <file relUrl="Download.aspx" publishTime="07/11/2012 16:58:27" />
     <file relUrl="css/font-awesome.css" publishTime="07/09/2012 20:54:16" />
     <file relUrl="css/fancy_shadow_se.png" publishTime="07/02/2012 07:21:09" />
     <file relUrl="img/masthead/masthead-2.jpg" publishTime="07/09/2012 22:16:57" />

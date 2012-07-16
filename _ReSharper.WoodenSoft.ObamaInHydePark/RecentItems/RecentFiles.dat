@@ -3,64 +3,64 @@
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:DataLayer/d:Repositories/f:OrderRepository.cs" caret="751" fromTop="10" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:BuisinessLogic/d:Common/f:EmailerFactory.cs" caret="1391" fromTop="19" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:SaveEmail.aspx.cs" caret="1418" fromTop="16" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:AdminPanel.aspx" caret="489" fromTop="7" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Billing.aspx" caret="466" fromTop="8" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Admin.Master" caret="349" fromTop="6" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:DataLayer/d:Repositories/d:Interfaces/f:IImageRepository.cs" caret="342" fromTop="11" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:DataLayer/d:Repositories/f:ImageRepository.cs" caret="737" fromTop="15" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:DataLayer/d:Models/f:Image.cs" caret="225" fromTop="9" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Contact.aspx.designer.cs" caret="0" fromTop="0" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:css/f:bootstrap.css" caret="48317" fromTop="27" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:css/f:bootstrap.min.css" caret="68056" fromTop="27" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:js/f:focus.js" caret="48" fromTop="1" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="2832" fromTop="20" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master.cs" caret="1031" fromTop="15" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6835" fromTop="25" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Download.aspx" caret="2606" fromTop="17" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Map.aspx" caret="288" fromTop="2" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:SaveEmail.aspx" caret="0" fromTop="0" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:TermsAndConditions.aspx" caret="263" fromTop="2" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Contact.aspx" caret="687" fromTop="10" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:About.aspx" caret="237" fromTop="2" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Login.aspx" caret="0" fromTop="0" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:SiteManager.aspx" caret="2611" fromTop="18" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:SiteManager.aspx.cs" caret="3652" fromTop="13" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Contact.aspx.designer.cs" caret="0" fromTop="0" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:About.aspx" caret="237" fromTop="2" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:TermsAndConditions.aspx" caret="263" fromTop="2" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:SaveEmail.aspx" caret="0" fromTop="0" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Map.aspx" caret="288" fromTop="2" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Download.aspx" caret="1020" fromTop="14" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Contact.aspx" caret="687" fromTop="10" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:js/f:focus.js" caret="48" fromTop="1" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="1865" fromTop="5" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx.cs" caret="1540" fromTop="16" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Web.config" caret="187" fromTop="7" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master.cs" caret="617" fromTop="7" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:css/f:bootstrap.css" caret="48317" fromTop="27" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:css/f:bootstrap.min.css" caret="74131" fromTop="27" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:AdminPanel.aspx" caret="489" fromTop="7" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Billing.aspx" caret="466" fromTop="8" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Admin.Master" caret="349" fromTop="6" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:SiteManager.aspx.cs" caret="3574" fromTop="13" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Web.config" caret="187" fromTop="0" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx.cs" caret="1546" fromTop="19" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Login.aspx.cs" caret="745" fromTop="17" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Components/d:BuisinessLogic/d:Common/f:GeoDirectionsHelper.cs" caret="516" fromTop="13" />
     <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Admin.Master.cs" caret="0" fromTop="0" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:Admin/f:Login.aspx.cs" caret="745" fromTop="17" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6369" fromTop="17" />
   </RecentFiles>
   <RecentEdits>
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="2145" fromTop="19" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="1699" fromTop="6" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="1825" fromTop="22" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="3835" fromTop="5" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="3484" fromTop="5" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="4162" fromTop="17" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="5296" fromTop="6" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="4593" fromTop="18" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="1722" fromTop="19" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="438" fromTop="6" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx.cs" caret="1118" fromTop="17" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx.cs" caret="482" fromTop="4" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="1928" fromTop="9" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="2037" fromTop="15" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="1865" fromTop="5" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx.cs" caret="1540" fromTop="16" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="5196" fromTop="7" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6013" fromTop="16" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="362" fromTop="6" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Web.config" caret="1134" fromTop="25" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/d:css/f:bootstrap.min.css" caret="74131" fromTop="27" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="1030" fromTop="3" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="704" fromTop="6" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="4559" fromTop="13" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6358" fromTop="6" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="4286" fromTop="10" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6914" fromTop="18" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6246" fromTop="24" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6246" fromTop="2" />
-    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="6079" fromTop="2" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="7703" fromTop="2" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="9820" fromTop="8" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="7916" fromTop="17" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="10047" fromTop="21" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="2838" fromTop="24" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="5106" fromTop="22" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="3612" fromTop="15" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="8984" fromTop="8" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="9297" fromTop="14" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="9632" fromTop="14" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="9451" fromTop="10" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="9104" fromTop="10" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master.cs" caret="1031" fromTop="15" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="3803" fromTop="7" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="4040" fromTop="16" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="4395" fromTop="20" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="3421" fromTop="22" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="4770" fromTop="16" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="4855" fromTop="17" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="4126" fromTop="25" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="3491" fromTop="6" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="3314" fromTop="25" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="2562" fromTop="6" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="8582" fromTop="15" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="8422" fromTop="9" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="8310" fromTop="5" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Site.Master" caret="8085" fromTop="4" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx" caret="2238" fromTop="9" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Default.aspx.cs" caret="1970" fromTop="13" />
+    <File id="3EA2B110-DA38-4D18-9EAE-D3A68D7E3F26/f:Download.aspx" caret="2013" fromTop="10" />
   </RecentEdits>
 </RecentFiles>

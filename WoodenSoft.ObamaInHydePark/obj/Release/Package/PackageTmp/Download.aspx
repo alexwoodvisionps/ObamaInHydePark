@@ -27,9 +27,9 @@
                     //                        'transitionOut': 'none',
                     //                        'type': 'iframe'
                     //                    });
-                    window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&notify_url=http://obamainhydepark.com/PayPalCallback.aspx&hosted_button_id=95FHU2RTMYTTC", "Paypal", "toolbar=0,menubar=0,height=500,width=400,scrollbars=1");
+                    window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&notify_url=http://obamainhydepark.com/PayPalCallback.aspx&hosted_button_id=LKBA6LDFF3X36", "Paypal", "toolbar=0,menubar=0,height=500,width=400,scrollbars=1");
                     //https://www.sandbox.paypal.com/cgi-bin/webscr
-                    //window.open("https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&notify_url=http://obamainhydepark.com/PayPalCallback.aspx&hosted_button_id=95FHU2RTMYTTC", "Paypal", "toolbar=0,menubar=0,height=500,width=400,scrollbars=1");
+                    //window.open("https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&notify_url=http://obamainhydepark.com/PayPalCallback.aspx&hosted_button_id=LKBA6LDFF3X36", "Paypal", "toolbar=0,menubar=0,height=500,width=400,scrollbars=1");
                     //window.open("/BuyNow.aspx", "Paypal", "toolbar=0,menubar=0,height=500,width=400,scrollbars=1");
                     
                     //LKBA6LDFF3X36

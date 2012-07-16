@@ -43,7 +43,7 @@
 //        });
 	</script>
 		<div>
-		<div>
+		<div id="container" style="height: 300">
 		
 			<div id="slides">
 				<div class="slides_container">
@@ -55,8 +55,10 @@
 		</div> <!-- /container -->
 	
 	</div> <!-- /masthead -->
-	
-    <h2>Welcome To Obama In Hyde Park</h2>
+	<div id="welcome" class="grid-12">
+		<h1>Welcome to the Obama in Hyde Park Downloadable Tour</h1>
+	</div>
+    
     <div>
         <asp:Literal runat="server" ID="litMessage"></asp:Literal>
     </div>
@@ -66,4 +68,81 @@
     <div>
         Disclaimer: This site requires Java Script To Run Sucessfully!
     </div>
+    <div style="text-align: left">
+      			
+			<hr class="row-divider" />
+			
+			
+			<div class="row divider about-container">
+				
+				<div class="grid-3">				
+					<h2><span class="slash">//</span> Our Story</h2>
+                    <p>How This Works </p>
+                    <p>
+Purchase the tour via credit card or Paypal and you will receive a link via email.  Once clicked, the tour will begin
+to download onto your desktop, laptop, or mobile device.  Just click play and enjoy! </p>				
+			    </div> <!-- /grid-3 -->
+			
+			<div class="grid-4">
+				<div class="about-item">
+									
+					<h3>About Us</h3>
+					
+					<p><asp:Literal runat="server" ID="litAboutUs"></asp:Literal></p>
+					
+					<p><a href="/About.aspx">Read More »</a></p>						
+					
+				</div> <!-- /about -->
+			</div> <!-- /grid-4 -->
+			
+			<div class="grid-5">				
+				<h3>Benefits of Our Tour</h3>
+			
+				<div class="choose-item">
+					
+					<h3>
+						<i style="color:red">*</i>
+						Self Guided							
+					</h3>
+					
+					<p>Unlike traditional tours, this tour can be done at your own pace. No waiting in lines, or booking appointments.</p>
+				</div> <!-- /choose-item -->
+			
+				<div class="choose-item">
+					<h3>
+						<i style="color:red">*</i>
+						Authentic					
+					</h3>
+					
+					<p>This tour is written and produced by a lifelong Chicagoan who worked on the campaign.  Countless interviews, research, and personal experience has gone into this tour.  </p>
+				</div> <!-- /choose-item -->
+				
+				<div class="choose-item">
+					
+					<h3>
+						<i style="color:red">*</i>
+						Cost Savings							
+					</h3>
+					
+					<p>A quarter of the price of the lowest available guided tour.  For a family of four that adds up to quite the savings!</p>
+				</div> <!-- /choose-item -->
+				
+				<div class="choose-item">
+					
+					<h3>
+						 <i style="color:red">*</i>
+						Mac and Pc Compliant						
+					</h3>
+					
+					<p>This tour is both Windows and Apple compliant.</p>
+				</div> <!-- /choose-item -->
+				
+
+				
+			</div> <!-- /grid-5 -->
+				
+			</div> <!-- /row -->
+			
+		</div> <!-- /container -->
+		
 </asp:Content>
